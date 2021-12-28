@@ -1,0 +1,49 @@
+service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
+    # "class hal" causes a race condition on some devices due to files created
+    # in /data. As a workaround, postpone startup until later in boot once
+    # /data is mounted.
+    class late_start
+    user system
+    group system input
+    writepid /dev/cpuset/system-background/tasks
+
+service btlfpserver /vendor/bin/hw/btlfpserver
+    class late_start
+    user system
+
+# Kill self if init failed.
+on property:vendor.fingerprintd.openhal=failed
+    stop vendor.fps_hal
+
+on init
+    chmod 0664 /dev/fp_drv
+    chown root root /dev/fp_drv
+
+    chmod 0666 /dev/elan_fp
+    chown root root /dev/elan_fp
+
+    chmod 0666 /dev/blfp
+    chown system system /dev/blfp
+
+    chmod 0666 /dev/focaltech_fp
+    chown system system /dev/focaltech_fp
+
+# for fp quick wakeup unlock.
+   chmod 0666 /sys/devices/system/cpu/cpu1/online
+   chmod 0666 /sys/devices/system/cpu/cpu2/online
+   chmod 0666 /sys/devices/system/cpu/cpu3/online
+   chmod 0666 /sys/devices/system/cpu/cpu4/online
+   chmod 0666 /sys/devices/system/cpu/cpu5/online
+   chmod 0666 /sys/devices/system/cpu/cpu6/online
+   chmod 0666 /sys/devices/system/cpu/cpu7/online
+
+on post-fs-data
+   mkdir /data/vendor/blfp 0700 system  system
+
+   mkdir /data/vendor/focaltech 0760 system system
+   restorecon /data/vendor/focaltech
+
+on property:vendor.fingerprintd.factory=1
+    start btlfpserver
+    start vendor.fps_hal
+

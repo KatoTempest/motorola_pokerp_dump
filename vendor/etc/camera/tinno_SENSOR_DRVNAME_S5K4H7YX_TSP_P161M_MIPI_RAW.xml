@@ -1,0 +1,127 @@
+<TinnoParameter>
+	<nightshot>
+		<denoiseParamTable usage="multi-denoise" name="table1">
+			<iso_start>100</iso_start>
+			<iso_end>300</iso_end>
+			<sharpness_enable>1</sharpness_enable>
+			<sharpness_level>15</sharpness_level>
+			<saturation>49</saturation>
+			<light>0</light>
+			<denoise_level>3</denoise_level>
+		</denoiseParamTable>
+		<denoiseParamTable usage="multi-denoise" name="table2">
+			<iso_start>300</iso_start>
+			<iso_end>600</iso_end>
+			<sharpness_enable>1</sharpness_enable>
+			<sharpness_level>80</sharpness_level>
+			<saturation>49</saturation>
+			<light>0</light>
+			<denoise_level>40</denoise_level>
+		</denoiseParamTable>
+		<denoiseParamTable usage="multi-denoise" name="table3">
+			<iso_start>600</iso_start>
+			<iso_end>1200</iso_end>
+			<sharpness_enable>1</sharpness_enable>
+			<sharpness_level>70</sharpness_level>
+			<saturation>49</saturation>
+			<light>0</light>
+			<denoise_level>45</denoise_level>
+		</denoiseParamTable>
+		<denoiseParamTable usage="multi-denoise" name="table4">
+			<iso_start>1200</iso_start>
+			<iso_end>2200</iso_end>
+			<sharpness_enable>1</sharpness_enable>
+			<sharpness_level>60</sharpness_level>
+			<saturation>49</saturation>
+			<light>0</light>
+			<denoise_level>50</denoise_level>
+		</denoiseParamTable>
+		<denoiseParamTable usage="multi-denoise" name="table5">
+			<iso_start>2200</iso_start>
+			<iso_end>3200</iso_end>
+			<sharpness_enable>1</sharpness_enable>
+			<sharpness_level>50</sharpness_level>
+			<saturation>50</saturation>
+			<light>0</light>
+			<denoise_level>75</denoise_level>
+		</denoiseParamTable>
+		<denoiseParamTable usage="multi-denoise" name="table6">
+			<iso_start>3200</iso_start>
+			<iso_end>6500</iso_end>
+			<sharpness_enable>1</sharpness_enable>
+			<sharpness_level>1</sharpness_level>
+			<saturation>50</saturation>
+			<light>0</light>
+			<denoise_level>100</denoise_level>
+		</denoiseParamTable>
+	</nightshot>
+	
+	<bestshot>
+		<denoiseParamTable usage="multi-denoise" name="table1">
+			<iso_start>100</iso_start>
+			<iso_end>300</iso_end>
+			<sharpness_enable>1</sharpness_enable>
+			<sharpness_level>15</sharpness_level>
+			<saturation>49</saturation>
+			<light>0</light>
+			<denoise_level>3</denoise_level>
+		</denoiseParamTable>
+		<denoiseParamTable usage="multi-denoise" name="table2">
+			<iso_start>300</iso_start>
+			<iso_end>600</iso_end>
+			<sharpness_enable>1</sharpness_enable>
+			<sharpness_level>80</sharpness_level>
+			<saturation>49</saturation>
+			<light>0</light>
+			<denoise_level>40</denoise_level>
+		</denoiseParamTable>
+		<denoiseParamTable usage="multi-denoise" name="table3">
+			<iso_start>600</iso_start>
+			<iso_end>1200</iso_end>
+			<sharpness_enable>1</sharpness_enable>
+			<sharpness_level>70</sharpness_level>
+			<saturation>49</saturation>
+			<light>0</light>
+			<denoise_level>45</denoise_level>
+		</denoiseParamTable>
+		<denoiseParamTable usage="multi-denoise" name="table4">
+			<iso_start>1200</iso_start>
+			<iso_end>2200</iso_end>
+			<sharpness_enable>1</sharpness_enable>
+			<sharpness_level>60</sharpness_level>
+			<saturation>49</saturation>
+			<light>0</light>
+			<denoise_level>50</denoise_level>
+		</denoiseParamTable>
+		<denoiseParamTable usage="multi-denoise" name="table5">
+			<iso_start>2200</iso_start>
+			<iso_end>3200</iso_end>
+			<sharpness_enable>1</sharpness_enable>
+			<sharpness_level>50</sharpness_level>
+			<saturation>50</saturation>
+			<light>0</light>
+			<denoise_level>75</denoise_level>
+		</denoiseParamTable>
+		<denoiseParamTable usage="multi-denoise" name="table6">
+			<iso_start>3200</iso_start>
+			<iso_end>6500</iso_end>
+			<sharpness_enable>1</sharpness_enable>
+			<sharpness_level>1</sharpness_level>
+			<saturation>50</saturation>
+			<light>0</light>
+			<denoise_level>100</denoise_level>
+		</denoiseParamTable>
+	</bestshot>
+	
+	<softlightdetect>
+		<bv_threshold>-22</bv_threshold>
+	</softlightdetect>
+		
+	<asd>
+		<bv_threshold>-22</bv_threshold>
+                <hdrd_backlit>85</hdrd_backlit>
+                <hdrd_confidence>0.5</hdrd_confidence>
+                <hdrd_tolerance_low>0.85</hdrd_tolerance_low>
+                <hdrd_tolerance_high>1.35</hdrd_tolerance_high>
+	</asd>
+</TinnoParameter>

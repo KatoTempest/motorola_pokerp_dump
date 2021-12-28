@@ -1,0 +1,3 @@
+libMcClient.so
+libMcRegistry.so
+libvendor_jpegencoder.so

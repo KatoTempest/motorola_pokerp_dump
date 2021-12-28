@@ -1,0 +1,86 @@
+#daming.cao,PBGAM-228,config clientid
+on property:ro.boot.carrier=amxbr
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-americamovil-{country}-revc
+   setprop ro.com.google.clientidbase.am android-americamovil-{country}
+
+# TINNO BEGIN
+# Add by chongxin.cheng for PBGAM-1411 with FAQ19818
+on property:ro.boot.carrier=amxmx
+   setprop persist.vendor.radio.fd.on.only.r8 1
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-americamovil-{country}-revc
+   setprop ro.com.google.clientidbase.am android-americamovil-{country}
+
+on property:ro.boot.carrier=attmx
+   setprop persist.vendor.radio.fd.on.only.r8 1
+
+on property:ro.boot.carrier=tefmx
+   setprop persist.vendor.radio.fd.on.only.r8 1
+# TINNO END.
+
+# TINNO BEGIN
+# Add by chongxin.cheng for PBGAM-1972
+on property:ro.boot.carrier=amxmx
+   setprop ro.feature.telcellclearcode true
+# TINNO END.
+
+# TINNO BEGIN
+# Add by chongxin.cheng for PBGAM-2469
+on property:ro.boot.carrier=tigco
+   setprop persist.vendor.data.not.val true
+# TINNO END.
+
+on property:ro.boot.carrier=amxco
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-americamovil-{country}-revc
+   setprop ro.com.google.clientidbase.am android-americamovil-{country}
+
+on property:ro.boot.carrier=attmx
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-attmexico-mx-revc
+   setprop ro.com.google.clientidbase.am ""
+
+on property:ro.boot.carrier=amxpe
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-americamovil-{country}-revc
+   setprop ro.com.google.clientidbase.am android-americamovil-{country}
+
+on property:ro.boot.carrier=amxcl
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-americamovil-{country}-revc
+   setprop ro.com.google.clientidbase.am android-americamovil-{country}
+
+on property:ro.boot.carrier=amxla
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-americamovil-{country}-revc
+   setprop ro.com.google.clientidbase.am android-americamovil-{country}
+
+on property:ro.boot.carrier=eegb
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-ee-uk-revc
+   setprop ro.com.google.clientidbase.am ""
+
+on property:ro.boot.carrier=dteu
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-dt-{country}-revc
+   setprop ro.com.google.clientidbase.am android-tmobile-{country}
+
+#daming.cao,PBGAM-4078
+on property:ro.boot.carrier=openmx
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.am android-americamovil-{country}
+   setprop ro.com.google.clientidbase.ms android-americamovil-{country}-revc
+
+#daming.cao,PBGAM-4072 gang.an,timit amazon
+on property:ro.boot.carrier=timit
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.am ""
+   setprop ro.com.google.clientidbase.ms android-tim-it-revc
+   setprop ro.csc.amazon.partnerid timit
+
+# must be last one for the default setting
+on property:ro.boot.carrier=*
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-motorola-rev2
+   setprop ro.com.google.clientidbase.am android-motorola
