@@ -1,0 +1,14 @@
+# full_p161bn-user 9 PTBS29.401-58-8 58-8 release-keys
+- manufacturer: motorola
+- platform: mt6765
+- codename: pokerp
+- flavor: full_p161bn-user
+- release: 9
+- id: PTBS29.401-58-8
+- incremental: 58-8
+- tags: release-keys
+- fingerprint: motorola/pokerp_reteu_64/pokerp:9/PTBS29.401-58-8/58-8:user/release-keys
+- is_ab: false
+- brand: motorola
+- branch: full_p161bn-user-9-PTBS29.401-58-8-58-8-release-keys
+- repo: motorola_pokerp_dump
