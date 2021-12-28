@@ -1,0 +1,3 @@
+ClaroContenedor;priv-app;amxbr;amxcl;amxla;amxpe;amxco;
+AmxWrapper;priv-app;amxar;amxbr;amxcl;amxla;amxpe;amxco;amxmx;
+SysDLL;priv-app;amxco;amxla;amxpe;amxmx;

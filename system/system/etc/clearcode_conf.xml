@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ClearCodeItems version="1">
+<ClearCodeItem numeric="1" text="MARCACION NO DISPONIBLE -01-"/>
+<ClearCodeItem numeric="3" text="USUARIO NO DISPONIBLE -03-"/>
+<ClearCodeItem numeric="6" text="LLAMADA TERMINADA -6-"/>
+<ClearCodeItem numeric="8" text="USUARIO NO DISPONIBLE -08-"/>
+<ClearCodeItem numeric="17" text="USUARIO OCUPADO"/>
+<ClearCodeItem numeric="18" text="USUARIO NO RESPONDE -18-"/>
+<ClearCodeItem numeric="19" text="USUARIO NO RESPONDE -19-"/>
+<ClearCodeItem numeric="21" text="USUARIO NO DISPONIBLE -21-"/>
+<ClearCodeItem numeric="22" text="MARCACION NO DISPONIBLE -22-"/>
+<ClearCodeItem numeric="27" text="USUARIO NO DISPONIBLE -27-"/>
+<ClearCodeItem numeric="28" text="MARCACION NO DISPONIBLE -28-"/>
+<ClearCodeItem numeric="29" text="LLAMADA TERMINADA -29-"/>
+<ClearCodeItem numeric="30" text="LLAMADA TERMINADA -30-"/>
+<ClearCodeItem numeric="34" text="LLAMADA TERMINADA -34-"/>
+<ClearCodeItem numeric="38" text="LLAMADA TERMINADA -38-"/>
+<ClearCodeItem numeric="41" text="LLAMADA TERMINADA -41-"/>
+<ClearCodeItem numeric="42" text="LLAMADA TERMINADA -42-"/>
+<ClearCodeItem numeric="43" text="LLAMADA TERMINADA -43-"/>
+<ClearCodeItem numeric="44" text="LLAMADA TERMINADA -44-"/>
+<ClearCodeItem numeric="47" text="LLAMADA TERMINADA -47-"/>
+<ClearCodeItem numeric="49" text="LLAMADA TERMINADA -49-"/>
+<ClearCodeItem numeric="50" text="LLAMADA TERMINADA -50-"/>
+<ClearCodeItem numeric="55" text="LLAMADA TERMINADA -55-"/>
+<ClearCodeItem numeric="57" text="LLAMADA TERMINADA -57-"/>
+<ClearCodeItem numeric="58" text="LLAMADA TERMINADA -58-"/>
+<ClearCodeItem numeric="63" text="LLAMADA TERMINADA -63-"/>
+<ClearCodeItem numeric="65" text="LLAMADA TERMINADA -65-"/>
+<ClearCodeItem numeric="68" text="LLAMADA TERMINADA -68-"/>
+<ClearCodeItem numeric="69" text="LLAMADA TERMINADA -69-"/>
+<ClearCodeItem numeric="70" text="LLAMADA TERMINADA -70-"/>
+<ClearCodeItem numeric="79" text="LLAMADA TERMINADA -79-"/>
+<ClearCodeItem numeric="81" text="LLAMADA TERMINADA -81-"/>
+<ClearCodeItem numeric="87" text="LLAMADA TERMINADA -87-"/>
+<ClearCodeItem numeric="88" text="LLAMADA TERMINADA -88-"/>
+<ClearCodeItem numeric="95" text="LLAMADA TERMINADA -95-"/>
+<ClearCodeItem numeric="96" text="LLAMADA TERMINADA -96-"/>
+<ClearCodeItem numeric="97" text="LLAMADA TERMINADA -97-"/>
+<ClearCodeItem numeric="98" text="LLAMADA TERMINADA -98-"/>
+<ClearCodeItem numeric="99" text="LLAMADA TERMINADA -99-"/>
+<ClearCodeItem numeric="100" text="LLAMADA TERMINADA -100-"/>
+<ClearCodeItem numeric="101" text="LLAMADA TERMINADA -101-"/>
+<ClearCodeItem numeric="102" text="LLAMADA TERMINADA -102-"/>
+<ClearCodeItem numeric="111" text="LLAMADA TERMINADA -111-"/>
+<ClearCodeItem numeric="127" text="LLAMADA TERMINADA -127-"/>
+</ClearCodeItems>

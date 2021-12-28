@@ -1,0 +1,20 @@
+on early-fs
+   mkdir /mnt/vendor/resources 0777 system system
+
+#CJ: moto requirement, PMS need this to do some customization for facebook
+on property:persist.app.facebook.partnerid=*   
+   write /data/local/prop/persist.app.facebook.partnerid ${persist.app.facebook.partnerid}
+
+on post-fs-data
+   #CJ: use for tell app some prop is changed
+   mkdir /data/local/prop/ 0666 system system
+
+   #CJ: /data/misc/elabel/regulatory_info.png
+   mkdir /data/misc/elabel/
+   follow_copy_once /dev/block/platform/bootdevice/by-name/clogo /data/misc/elabel/regulatory_info.png
+   chown system system /data/misc/elabel/regulatory_info.png
+   chmod 0666 /data/misc/elabel/regulatory_info.png
+
+on property:ro.boot.product.hardware.sku=*
+   setprop persist.radio.multisim.config ${ro.boot.product.hardware.sku}
+

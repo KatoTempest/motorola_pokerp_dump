@@ -1,0 +1,3 @@
+#log prop
+import /system/etc/init/journey/journey.log.prop
+ro.jcf.speed.wthitlist=com.instagram.android,com.twitter.android

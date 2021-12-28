@@ -1,0 +1,20 @@
+on charger
+    #ID:MBA_ROC_GreenLEDThreshold_REQC80 lijr add 20181026 for KFBABGP-39 start
+    #DESCRIPTION:GreenLEDThreshold percentage value when charging is customizable. Default is 95%.
+    #AUTHOR:yinglong.tang
+    #TINNO BEGIN	
+    trigger load_system_props_action
+    #TINNO END
+    start kpoc_charger
+
+service kpoc_charger /system/bin/kpoc_charger
+    class charger
+
+#ID:MBA_ROC_GreenLEDThreshold_REQC80
+#DESCRIPTION:GreenLEDThreshold percentage value when charging is customizable. Default is 95%.
+#AUTHOR:yinglong.tang
+#TINNO BEGIN
+on init
+    on load_system_props_action
+    load_system_props
+#TINNO END

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 这个文件只针对工厂版本的配置，而且只能配置SettingsProvider的数据库中 -->
+<resources>
+    <setting type="system" name="screen_off_timeout" value="15000"/>
+    <setting type="system" name="screen_brightness_mode" value="0"/>
+    <setting type="system" name="sound_effects_enabled" value="0"/>
+</resources>

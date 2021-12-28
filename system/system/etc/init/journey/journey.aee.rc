@@ -1,0 +1,26 @@
+on init
+	setprop ro.vendor.aee.enforcing no
+	setprop persist.vendor.aeev.core.direct enable
+	setprop persist.vendor.mtk.aee.mode 3
+	setprop persist.vendor.mtk.aeev.mode 3
+	setprop persist.vendor.mtk.aee.filter 0
+	setprop persist.vendor.anr.dumpthr 1
+	# reduce the storage size.
+	setprop persist.vendor.aee.db.count 12
+	setprop persist.vendor.aee.fatal_db.count 6
+	setprop persist.vendor.aeev.db.count 12
+	setprop persist.vendor.aeev.fatal_db.count 6
+
+on property:ro.boot.journey.root=1
+	# it will cause CTS fail, so we just do it in root mode
+	setprop persist.vendor.aeev.core.dump enable
+	setprop persist.vendor.aee.core.dump enable
+	setprop persist.vendor.aeev.core.direct enable
+	setprop persist.vendor.aee.core.direct enable
+
+on property:persist.jdf.aeev.core.dump=1
+	# it will cause CTS fail, but we still need this some times
+	setprop persist.vendor.aeev.core.dump enable
+	setprop persist.vendor.aee.core.dump enable
+	setprop persist.vendor.aeev.core.direct enable
+	setprop persist.vendor.aee.core.direct enable

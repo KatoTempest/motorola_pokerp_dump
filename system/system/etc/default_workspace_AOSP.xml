@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<favorites xmlns:launcher="http://schemas.android.com/apk/res-auto/com.android.launcher3">
+
+  <!-- Hotseat (We use the screen as the position of the item in the hotseat) -->
+  <!-- Dialer Messaging [All Apps] Contacts Camera -->
+  <favorite container="-101" screen="0" x="0" y="0" packageName="com.google.android.dialer" className="com.google.android.dialer.extensions.GoogleDialtactsActivity"/>
+  <favorite container="-101" screen="1" x="1" y="0" packageName="com.google.android.apps.messaging" className="com.google.android.apps.messaging.ui.ConversationListActivity"/>
+  <favorite container="-101" screen="2" x="2" y="0" packageName="com.google.android.contacts" className="com.android.contacts.activities.PeopleActivity"/>
+  <favorite container="-101" screen="3" x="3" y="0" packageName="com.android.chrome" className="com.google.android.apps.chrome.Main"/>
+  <!-- In Launcher3, workspaces extend infinitely to the right, incrementing from zero -->
+  <!-- gang.an PBGAM-1144 add dialer entry for ftm-->
+  <favorite container="-101" screen="0" x="0" y="0" packageName="com.android.dialer" className="com.android.dialer.app.DialtactsActivity"/>
+
+  <!-- Google folder -->
+  <!-- Google, Chrome, Gmail, Maps, YouTube, (Drive), (Music), (Movies), Hangouts, Photos -->
+  <folder title="Google" screen="0" x="0" y="3">
+  <favorite
+	    launcher:packageName="com.google.android.apps.searchlite"
+	    launcher:className="com.google.android.apps.searchlite.ui.SearchActivity"/>
+   <favorite
+             launcher:packageName="com.google.android.apps.youtube.mango"
+             launcher:className="com.google.android.apps.youtube.lite.frontend.activities.SplashActivity" />
+	<favorite
+	    launcher:packageName="com.google.android.gm.lite"
+	    launcher:className="com.google.android.gm.ConversationListActivityGmail"/>
+	<favorite
+	    launcher:packageName="com.google.android.apps.assistant"
+	    launcher:className="com.google.android.apps.assistant.go.MainActivity"/>
+	<favorite
+	     launcher:packageName="com.google.android.apps.mapslite"
+	     launcher:className="org.chromium.webapk.shell_apk.MainActivity" />
+	<favorite 
+             launcher:packageName="com.android.chrome" 
+             launcher:className="com.google.android.apps.chrome.Main" />
+	<favorite
+	    launcher:packageName="com.google.android.music"
+	    launcher:className="com.android.music.activitymanagement.TopLevelActivity"/>
+	<favorite
+	    launcher:packageName="com.google.android.apps.photos"
+	    launcher:className="com.google.android.apps.photos.home.HomeActivity"/>
+	<favorite
+	    launcher:packageName="com.google.android.calendar"
+	    launcher:className="com.android.calendar.AllInOneActivity"/>
+	<favorite
+	    launcher:packageName="com.google.android.apps.nbu.files"
+	    launcher:className="com.google.android.apps.nbu.files.home.HomeActivity"/>
+  </folder>
+  <favorite screen="0" x="1" y="3" packageName="com.google.android.apps.tachyon" className="com.google.android.apps.tachyon.MainActivity"/>
+  <favorite screen="0" x="3" y="3" packageName="com.android.vending" className="com.android.vending.AssetBrowserActivity"/>
+  <!--<not_show_in_apelauncher_icon_packagename pname="com.android.chrome" /> -->
+  <!--<package_icon_show_normal pname="com.speedymovil.wire" />-->
+
+</favorites>

@@ -1,0 +1,11 @@
+on property:sys.boot_completed=1
+    start journey-post-boot
+
+service journey-post-boot /system/bin/init.journey.post_boot.sh
+    class late_start
+    user root
+    disabled
+    oneshot
+
+on property:ro.board.platform=mt6765
+    setprop dalvik.vm.dex2oat-threads 4

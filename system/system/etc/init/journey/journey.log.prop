@@ -1,0 +1,9 @@
+#increase some log size for boot debug , this prop use in LogBuffer::init() , there is 5 log ,so the max size is 5*persist.logd.size
+#any way , some cts may need this.
+ro.logd.size=2097152
+
+#CJ remove the auditd log
+ro.logd.auditd=false
+
+#CJ reduce the log in customer version ?
+#persist.log.tag=I

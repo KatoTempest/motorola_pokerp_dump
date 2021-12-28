@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <!-- daming.cao,VFAAC-100,default package for zero touch mode -->
+    <!-- Enable Zero Touch Provisioning support. -->
+    <feature name="com.google.android.feature.ZERO_TOUCH" />
+</config>

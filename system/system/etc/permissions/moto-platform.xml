@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+  <!-- CJ:add for MOTO ota , from https://docs.google.com/presentation/d/1m1dhF1987Dq0wn6D2h8giwxmvv7pPwUNcaR_AgAicOs/edit#slide=id.g566c896caf_0_7 -->
+  <allow-in-power-save package="com.motorola.ccc.ota" />
+  <allow-in-data-usage-save package="com.motorola.ccc.ota" />
+    
+  <!-- add for Claro contenedor app-->
+  <allow-in-power-save package="com.claroColombia.contenedor"/>
+  <app-link package="com.claroColombia.contenedor"/>
+  
+  <privapp-permissions package="com.claroColombia.contenedor">
+    <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <permission name="android.permission.INSTALL_PACKAGES"/>
+    <permission name="android.permission.BROADCAST_PACKAGE_REMOVED"/>
+    <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+  </privapp-permissions>
+  
+  <!-- add for telcel contenedor app-->  
+  <allow-in-power-save package="com.telcel.contenedor"/>
+  <app-link package="com.telcel.contenedor"/>
+  
+  <privapp-permissions package="com.telcel.contenedor">
+    <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <permission name="android.permission.INSTALL_PACKAGES"/>
+    <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+  </privapp-permissions>
+
+  <!-- Ji.yang, date20190414, BRApps2, PBGAM-257, FEATURE-4518 -->
+  <allow-in-power-save package="com.motorola.brapps"/>
+  <privapp-permissions package="com.motorola.brapps">
+    <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+  </privapp-permissions>
+  
+  <allow-in-power-save package="com.mediatek.simprocessor"/>
+  
+</permissions>

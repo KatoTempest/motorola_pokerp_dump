@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- carrierName    : sim card carrier name -->
+<!-- carrierNumeric : sim card carrier numeric -->
+<!-- operatorNumeric: search network operator numeric -->
+<!-- operatorLong   : search network operator alpha long -->
+<!-- operatorShort  : search network operator alpha short -->
+<snns version="1">
+    <!-- fukang.li 2019-6-24 for PBGAM-3076, start -->
+    <snn values="PLAY (Plus)">
+        <carrierName>Play</carrierName>
+        <carrierNumeric>26006</carrierNumeric>
+        <operatorNumeric>26001</operatorNumeric>
+        <operatorLong>Plus</operatorLong>
+    </snn>
+    <snn values="PLAY (T-Mobile)">
+        <carrierName>Play</carrierName>
+        <carrierNumeric>26006</carrierNumeric>
+        <operatorNumeric>26002</operatorNumeric>
+    </snn>
+    <snn values="PLAY (Orange)">
+        <carrierName>Play</carrierName>
+        <carrierNumeric>26006</carrierNumeric>
+        <operatorNumeric>26003</operatorNumeric>
+    </snn>
+    <snn values="PLAY">
+        <carrierName>Play</carrierName>
+        <carrierNumeric>26006</carrierNumeric>
+        <operatorNumeric>26006</operatorNumeric>
+        <operatorLong>Play</operatorLong>
+    </snn>
+    <!-- fukang.li 2019-6-24 for PBGAM-3076, end -->
+
+    <!-- fukang.li 2019-7-2 for PBGAM-3534 -->
+    <snn values="nju">
+        <carrierName>nju</carrierName>
+        <carrierNumeric>26003</carrierNumeric>
+        <operatorNumeric>26003</operatorNumeric>
+        <operatorLong>Orange</operatorLong>
+    </snn>
+    <snn values="nju">
+        <carrierName>nju mobile</carrierName>
+        <carrierNumeric>26003</carrierNumeric>
+        <operatorNumeric>26003</operatorNumeric>
+        <operatorLong>Orange</operatorLong>
+    </snn>
+    <snn values="Play">
+        <carrierName>nju</carrierName>
+        <carrierNumeric>26003</carrierNumeric>
+        <operatorNumeric>26006</operatorNumeric>
+        <operatorLong>PLAY</operatorLong>
+    </snn>
+
+    <!--<snn values="TEST">
+        <carrierName>CMCC</carrierName>
+        <carrierNumeric>46000</carrierNumeric>
+        <operatorNumeric>46000</operatorNumeric>
+        <operatorLong>CMCC</operatorLong>
+        <operatorShort></operatorShort>
+    </snn>
+    <snn values="TEST6">
+        <carrierName>CHN-UNICOM</carrierName>
+        <carrierNumeric>46001</carrierNumeric>
+        <operatorNumeric>46011</operatorNumeric>
+    </snn>-->
+</snns>

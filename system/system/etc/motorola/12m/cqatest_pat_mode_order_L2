@@ -1,0 +1,5 @@
+com.motorola.motocit.display.testPatterns.WhiteWithBlackBorder
+com.motorola.motocit.vibrator.VibratorTest
+com.motorola.motocit.touchscreen.Touch_MXT224
+com.motorola.motocit.hostmode.Hostmode
+com.motorola.motocit.key.KeyTest

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 
+    PERSO ID: MBA_FTR_FCCDegradePowerOfSAR_REQC6428 
+    Config the AT CMD for degrade power of SAR.
+    Author: yinglong.tang 
+-->
+<atcmds version="1">
+    <!-- WCDMA band1  backoff 2db -->
+    <!--
+    <ATCMD values="AT+ERFTX=10,2,16,16"></ATCMD>
+    -->
+    <!-- LTE band1 backoff 2db -->
+    <!--
+    <ATCMD values="AT+ERFTX=10,3,1,16,0,0"></ATCMD>
+    -->
+    <!-- LTE band3 backoff 2db -->
+    <!--
+    <ATCMD values="AT+ERFTX=10,3,3,16,0,0"></ATCMD>
+    -->
+    <!-- LTE band7 backoff 3db -->
+    <!--
+    <ATCMD values="AT+ERFTX=10,3,7,24,0,0"></ATCMD>
+    -->
+    <!-- FCC_RF_2G_DOWN_PCS1900 -->
+    <ATCMD Category="WIFIAP_ON_SCREEN_ON" AT="AT+ERFTX=3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,8,8,8,8,8,8,8"></ATCMD>
+    <!-- FCC_RF_3G_DOWN_B1_B2 -->
+    <ATCMD Category="WIFIAP_ON_SCREEN_ON" AT="AT+ERFTX=3,2,8,8,8,8,0,0,0,0"></ATCMD>
+    <!-- FCC_RF_4G_DOWN_B1 -->
+    <ATCMD Category="WIFIAP_ON_SCREEN_ON" AT="AT+ERFTX=10,3,1,8,0,0"></ATCMD>
+    <!-- FCC_RF_4G_DOWN_B3 -->
+    <ATCMD Category="WIFIAP_ON_SCREEN_ON" AT="AT+ERFTX=10,3,3,8,0,0"></ATCMD>
+
+
+    <!-- FCC_RF_2G_DOWN_PCS1900 -->
+    <ATCMD Category="WIFIAP_OFF_SCREEN_ON" AT="AT+ERFTX=3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,8,8,8,8,8,8,8"></ATCMD>
+    <!-- FCC_RF_3G_DOWN_B1_B2 -->
+    <ATCMD Category="WIFIAP_OFF_SCREEN_ON" AT="AT+ERFTX=3,2,8,8,8,8,0,0,0,0"></ATCMD>
+    <!-- FCC_RF_4G_DOWN_B1 -->
+    <ATCMD Category="WIFIAP_OFF_SCREEN_ON" AT="AT+ERFTX=10,3,1,8,0,0"></ATCMD>
+    <!-- FCC_RF_4G_DOWN_B3 -->
+    <ATCMD Category="WIFIAP_OFF_SCREEN_ON" AT="AT+ERFTX=10,3,3,8,0,0"></ATCMD>
+
+
+    <!-- FCC_RF_2G_DOWN_PCS1900 -->
+    <ATCMD Category="WIFIAP_ON_SCREEN_OFF" AT="AT+ERFTX=3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,8,8,8,8,8,8,8"></ATCMD>
+    <!-- FCC_RF_3G_DOWN_B1_B2 -->
+    <ATCMD Category="WIFIAP_ON_SCREEN_OFF" AT="AT+ERFTX=3,2,8,8,8,8,0,0,0,0"></ATCMD>
+    <!-- FCC_RF_4G_DOWN_B1 -->
+    <ATCMD Category="WIFIAP_ON_SCREEN_OFF" AT="AT+ERFTX=10,3,1,8,0,0"></ATCMD>
+    <!-- FCC_RF_4G_DOWN_B3 -->
+    <ATCMD Category="WIFIAP_ON_SCREEN_OFF" AT="AT+ERFTX=10,3,3,8,0,0"></ATCMD>
+
+
+    <!-- FCC_RF_2G_DOWN_PCS1900 -->
+    <ATCMD Category="WIFIAP_OFF_SCREEN_OFF" AT="AT+ERFTX=3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,8,8,8,8,8,8,8"></ATCMD>
+    <!-- FCC_RF_3G_DOWN_B1_B2 -->
+    <ATCMD Category="WIFIAP_OFF_SCREEN_OFF" AT="AT+ERFTX=3,2,8,8,8,8,0,0,0,0"></ATCMD>
+    <!-- FCC_RF_4G_DOWN_B1 -->
+    <ATCMD Category="WIFIAP_OFF_SCREEN_OFF" AT="AT+ERFTX=10,3,1,8,0,0"></ATCMD>
+    <!-- FCC_RF_4G_DOWN_B3 -->
+    <ATCMD Category="WIFIAP_OFF_SCREEN_OFF" AT="AT+ERFTX=10,3,3,8,0,0"></ATCMD>
+</atcmds>
